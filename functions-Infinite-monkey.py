@@ -1,3 +1,10 @@
+'''1. generate_string generates a string of length 28, a random
+      collection the alphabets.
+   2. score_string compares the generated string to a target
+      string and scores it.
+   3. go_monkey repeatedly calls generate_string and score_string
+      until there's a 100% match.'''
+      
 import random
 #print(random.randint(1,10))
 target_string = "methinks it is like a weasel"
