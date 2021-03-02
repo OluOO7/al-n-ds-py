@@ -19,6 +19,15 @@ class MSDie:
 
     def __repr__(self):
         return "MSDie({}) : {}".format(self.num_sides, self.current_value)
+    
+    def __eq__(self, other):
+        return self.current_value == other.current_value
+
+    def __lt__(self, other):
+        return self.current_value < other.current_value
+
+    def __le__(self, other):
+        return self.current_value <= other.current_value
 
 my_die = MSDie(6)
 for i in range(5):
