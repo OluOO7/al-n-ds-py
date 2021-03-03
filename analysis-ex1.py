@@ -1,6 +1,12 @@
 '''Define two functions, one O(n**2) and the other O(n) that returns the minimum number in a list of number.
 '''
-def findmin(l):
+import time
+
+def findmin_quad(l):
+    """
+    Quadratic function that finds minimum number of a list.
+    """
+    start = time.time() 
     min_num = l[0]
     for i in l:
         ismin = True                #Assumes i is the minimum.
@@ -9,6 +15,7 @@ def findmin(l):
                 ismin = False   
         if ismin:
             min_num = i
-    return min_num            
+    end = time.time()  
+    return min_num , end - start          
     
-print(findmin([10,2,3,-4,1,9]))
+print(findmin_quad([10,2,3,-4,1,9,-8]))
