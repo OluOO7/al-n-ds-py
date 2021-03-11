@@ -17,5 +17,14 @@ def findmin_quad(l):
             min_num = i
     end = time.time()  
     return min_num , end - start          
+
+def findmin_lin(l):
+    """
+    Linear function that finds minimum number of a list.
+    """
+    start = time.time() 
+   
+    end = time.time()  
+    return min_num , end - start          
     
 print(findmin_quad([10,2,3,-4,1,9,-8]))
