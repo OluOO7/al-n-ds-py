@@ -34,6 +34,7 @@ print(s.size())
 """
 
 #Function below uses Stack to reverse the characters in a string
+'''
 def rev_string(my_str):
     my_str_stack = Stack()
     for i in my_str:
@@ -44,3 +45,4 @@ def rev_string(my_str):
         reversed_string += my_str_stack.pop()
     return print(reversed_string)
 rev_string('I want an apple')
+'''
